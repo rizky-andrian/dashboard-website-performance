@@ -1,5 +1,5 @@
 # ==============================================
-# DASHBOARD ANALISIS PERFORMA WEBSITE & UX/UI
+# DASHBOARD WEBSITE PERFORMANCES
 # ==============================================
 # Framework: Streamlit + Plotly + Scikit-learn
 # ==============================================
@@ -20,7 +20,7 @@ import seaborn as sns
 # Konfigurasi Tampilan
 # ---------------------------where
 st.set_page_config(
-    page_title="Dashboard Analisis Website & UX/UI",
+    page_title="Dashboard Website Performance",
     page_icon="💻",
     layout="wide"
 )
@@ -98,7 +98,7 @@ n_cluster = st.sidebar.slider("Jumlah Cluster (K)", 2, 6, 3)
 # ---------------------------
 # Load Data
 # ---------------------------
-st.title("💻 Dashboard Analisis Performa Website & UX/UI")
+st.title("💻 Dashboard Website Performance")
 
 if res_files:
     resource_df = pd.concat([pd.read_csv(f) for f in res_files])
